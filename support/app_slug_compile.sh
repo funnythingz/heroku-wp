@@ -2,10 +2,10 @@
 
 # Cleanup dirs
 rm -rf tmp/public.building tmp/public.old
-mkdir -p tmp/public.building
+mkdir -p tmp/public.building/magazine
 
 # Recursively copy files build final web dir
-cp -R vendor/WordPress/WordPress-ja/* tmp/public.building
+cp -R vendor/WordPress/WordPress-ja/* tmp/public.building/magazine
 cp -R public/* tmp/public.building
 
 # Move built web dir into place
